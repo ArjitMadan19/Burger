@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:padding="5dip"
+        android:gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <com.example.burger.Carousel
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/carousel"
+            custom:UseReflection="true"
+            custom:Names="@array/names"
+            custom:Items="@array/entries"
+            custom:SelectedItem="0"
+            android:animationDuration="200"
+            />
+    </LinearLayout>
+</LinearLayout>
